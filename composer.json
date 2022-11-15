@@ -1,0 +1,14 @@
+{
+    "name": "dev/money",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dmitry Kozlov",
+            "email": "develop.dmitry@gmail.com"
+        }
+    ]
+}

@@ -3,6 +3,7 @@ version: "3"
 services:
   apache:
     build: ./docker/apache
+    container_name: money_web
     volumes:
       - ./:/var/www/html
       - ./logs/apache2:/var/log/apache2
@@ -17,6 +18,7 @@ services:
       - apache
   mysql:
     image: mysql/mysql-server:8.0
+    container_name: money_mysql
     ports:
       - ${FORWARD_DB_PORT:-3306}:3306
     environment:

@@ -1,3 +1,5 @@
 /.idea/
 /logs/
 /.env
+/vendor/
+/docker/mysql/*.sql
