@@ -1,5 +1,7 @@
 FROM php:8.1-apache
 
+COPY ./hosts/000-default.conf /etc/apache2/sites-available/000-default.conf
+
 RUN apt-get update \
     && apt-get install -y \
         libfreetype6-dev \
@@ -13,4 +15,6 @@ RUN apt-get update \
     && docker-php-ext-install -j$(nproc) gd \
     && a2enmod rewrite
 
-WORKDIR /var/www
+WORKDIR /var/www/html
+
+USER root

@@ -7,3 +7,7 @@ try {
 } catch (PDOException $exception) {
     echo 'Произошла ошибка';
 }
+
+var_dump(get_current_user());
+
+mkdir('test');
