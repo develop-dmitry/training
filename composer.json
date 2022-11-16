@@ -10,5 +10,9 @@
             "name": "Dmitry Kozlov",
             "email": "develop.dmitry@gmail.com"
         }
-    ]
+    ],
+    "require": {
+        "doctrine/migrations": "^3.5",
+        "symfony/dotenv": "^6.1"
+    }
 }
