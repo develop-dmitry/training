@@ -8,3 +8,7 @@ $ docker-compose up -d --build
 ```
 $ ./scripts/build.sh
 ```
+## 1.4. Выполнение миграций
+```
+$ ./scripts/migrations.sh migrate
+```
